@@ -1,0 +1,84 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+/* over all css */
+
+.hidden
+{
+	display: none;
+}
+
+
+
+/* Responcive body moble */
+@media screen and (max-width: 639px) {
+	#siteCon
+	{
+		max-width: 640px;
+		margin: 0 auto;
+		flex: 1 1 200px;
+	}
+
+	#columnBox 
+	{
+		display: flex;
+		flex-direction: row;
+	}
+
+
+	.column1
+	{
+		background-color: pink;
+	}
+
+	.column2
+	{
+		background-color: red;
+	}
+
+	.column3
+	{
+		display: none;
+	}
+
+	.column4
+	{
+		display: none;
+	}
+
+}
+
+/* full screen 641+ build up */
+
+@media screen and (min-width: 640px) {
+	#siteCon{
+		max-width: 1140px;
+	}
+
+	.column1
+	{
+		background-color: blue;
+	}
+
+	.column2
+	{
+		background-color: purple;
+	}
+
+	.column3
+	{
+		background-color: grey;
+	}
+
+	.column4
+	{
+		background-color: brown;
+	}
+
+}
+
+
+
+

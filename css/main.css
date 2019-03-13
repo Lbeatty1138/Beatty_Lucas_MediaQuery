@@ -2,7 +2,6 @@
 /* CSS Document */
 
 
-
 /* over all css */
 
 .hidden
@@ -10,24 +9,22 @@
 	display: none;
 }
 
-
+.container
+{
+	max-width: 1140px;
+	margin: 0 auto;
+}
 
 /* Responcive body moble */
-@media screen and (max-width: 639px) {
-	#siteCon
-	{
-		max-width: 640px;
-		margin: 0 auto;
-		flex: 1 1 200px;
+@media screen and (max-width: 640px) {
+	.box {
+		flex: 1 1 150px;
+		margin: 10px;
 	}
-
-	#columnBox 
-	{
+	.wrapper {
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 	}
-
-
 	.column1
 	{
 		background-color: pink;
@@ -52,11 +49,17 @@
 
 /* full screen 641+ build up */
 
-@media screen and (min-width: 640px) {
-	#siteCon{
-		max-width: 1140px;
+@media screen and (min-width: 641px) {
+	.wrapper {
+		display: flex;
+		flex-direction: row;
 	}
 
+	.box {
+		margin: 10px;
+		flex-grow: 1;
+		height: 300px;
+	}
 	.column1
 	{
 		background-color: blue;
